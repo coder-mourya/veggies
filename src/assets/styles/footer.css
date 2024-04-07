@@ -1,0 +1,29 @@
+ .info ul li {
+
+    margin: 2rem 0;
+}
+
+.importantLinks ul li {
+    margin: 1rem 0;
+}
+.footer-bottom {
+    margin-bottom: 0;
+}
+
+.footer-bottom ul li {
+    margin-left: 1rem;
+}
+
+.footer-bottom ul li i{
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #0a2640;
+
+}
+
+.footer-bottom p {
+    font-size: 15px;
+}
+
+
+ 

@@ -1,0 +1,69 @@
+
+.loveInfo h1{
+    
+    font-weight: 800;
+    
+}
+
+.loveInfo p{
+    margin-top: 30px;
+    color: black;
+    
+}
+
+.round-button {
+    width: 50px; /* Adjust width as needed */
+    height:50px; /* Adjust height as needed */
+    border-radius: 50%; /* Make it round */
+    line-height: 40px; /* Vertically center content */
+   
+    padding:  0;
+    background-color: #FBEBEB;
+  }
+
+  .round-button img{
+    width: 10px;
+    margin-left: 1.3rem; 
+}
+  
+  .round-button:hover {
+    background-color: #ddd; /* Change background color on hover */
+  }
+  
+  .round-button:focus {
+    outline: none; /* Remove default focus outline */
+  }
+
+
+  
+  .userAbout{
+    margin-top: 1rem;
+  }
+
+  
+ 
+  .cardsAnimat .cards {
+    
+    background-color: #f4f5f9;
+    height: 80%; 
+    padding: 2rem;
+    border-radius: 5%;
+    margin: 0 1rem;
+  }
+  
+
+  .user > :nth-child(2){
+    margin-left: 1rem;
+    margin-right: 7rem;
+  }
+
+  .user > :nth-child(2) p {
+    color: gray;
+  }
+
+  
+
+
+
+
+  
