@@ -1,28 +1,36 @@
 [
     {
       "id": 1,
-      "itemName": "Product 1",
-      "itemPrice": 19.99,
+      "itemName": "Drumstickmoringa",
+      "itemPrice": "25AED / 250g",
       "itemImage": "item1.png"
     },
     {
       "id": 2,
-      "itemName": "Product 2",
-      "itemPrice": 29.99,
+      "itemName": "Pumpkin-disco",
+      "itemPrice": "25AED / 250g",
       "itemImage": "item2.png"
     },
     {
       "id": 3,
-      "itemName": "Product 3",
-      "itemPrice": 39.99,
+      "itemName": "Green-peas",
+      "itemPrice": "25AED / 250g",
       "itemImage": "item3.png"
     },
 
     {
       "id": 4,
-      "itemName": "Product 3",
-      "itemPrice": 39.99,
+      "itemName": "Drumstickmoringa",
+      "itemPrice": "25AED / 250g",
+      "itemImage": "item4.png"
+    },
+
+    {
+      "id": 5,
+      "itemName": "Pumpkin-disco",
+      "itemPrice": "25AED / 250g",
       "itemImage": "item4.png"
     }
+
   ]
   

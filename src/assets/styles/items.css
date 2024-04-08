@@ -1,0 +1,39 @@
+.crad-items {
+
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
+}
+
+.showutton {
+    visibility: visible;
+}
+
+
+.optional-butons {
+
+    display: none !important;
+}
+
+
+
+
+/* Media query for smaller devices */
+@media screen and (max-width: 992px) {
+
+    .showutton {
+        display: none !important;
+    }
+
+    .optional-butons {
+        display: flex !important;
+        align-items: center;
+
+        margin: 2rem;
+    }
+
+    .crad-items {
+
+        margin-top: 2rem !important;
+        margin-left: 7rem !important;
+    }
+}
