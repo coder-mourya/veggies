@@ -13,8 +13,12 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 import left from "../assets/Images/cmLove/left-arow.png";
 import right from "../assets/Images/cmLove/right-arow.png";
 import userIcon from "../assets/Images/cmLove/usericon.png";
-import dummyData from "./dummyData.json";
-import defoultImg from "../assets/Images/cmLove/user1.png";
+import  {Review} from "../assets/Dummydata/dummyData";
+// import user1 from "../assets/Images/cmLove/user1.png";
+// import user2 from "../assets/Images/cmLove/user2.png";
+// import user3 from "../assets/Images/cmLove/user3.png";
+
+
 
 
 const Love = () => {
@@ -27,30 +31,36 @@ const Love = () => {
   }, []);
 
   const fetchData = () => {
-    // Simulate fetching data from an API
-    setData(dummyData);
+    // Simulate fetching data from an API  
+    setData(Review);
   };
 
-  const breakpoints = {
-    0: { items: 1 },
-    600: { items: 2 },
-    1200: { items: 3 },
-  };
-
+  
   const handleNextButtonClick = () => {
     if (owlCarouselRef && owlCarouselRef.current) {
       owlCarouselRef.current.next();
     }
   };
-
+  
   const handlePrevButtonClick = () => {
     if (owlCarouselRef && owlCarouselRef.current) {
       owlCarouselRef.current.prev();
     }
   };
 
+// user images 
+  // const userImages = [user1, user2, user3];
+
+  
+  const breakpoints = {
+    0: { items: 1 },
+    600: { items: 2 },
+    1200: { items: 3 },
+  };
+
+
   return (
-    <div className="container mb-5 CmLove ">
+    <div className="container mb-[5rem] mt-[5rem] CmLove ">
       <div className="container my-5">
         <div className="flex justify-center">
           <div className="grid grid-cols-1 md:grid-cols-3 justify-between items-center w-[90%] pt-5">
@@ -77,8 +87,8 @@ const Love = () => {
               items={3}
               loop
               autoplay={true}
-              autoplayTimeout={3000}
-              smartSpeed={2500}
+              autoplayTimeout={2000}
+              smartSpeed={3000}
               margin={15}
               center={true}
               responsive={breakpoints}
@@ -89,14 +99,11 @@ const Love = () => {
                 <div key={item.id} className="cards">
                   <div className="user flex">
                     <div className="col-3">
-                      <img src={item.image || defoultImg}
-                        alt={item.name} className="cards-pick"
 
-                        onError={(e) => {
-                          e.target.src = defoultImg;
-                        }}
+                    <img src={item.image} 
+                    alt={item.nam}
+                     className="card-pick" />
 
-                      />
                     </div>
                     <div className="col-6 text-left">
                       <h5>{item.name}</h5>

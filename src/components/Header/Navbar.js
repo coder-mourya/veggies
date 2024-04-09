@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom'; 
+import { Link } from 'react-router-dom';
+import "../../assets/styles/colors.css"
 import logo from '../../assets/Images/logo.png';
 import searchIcon from '../../assets/Images/search.png';
 import cartIcon from '../../assets/Images/cart.png';
@@ -13,12 +14,14 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-[#ffffff] p-4">
+    <nav className=" p-4 navbar">
       <div className="flex justify-between items-center">
         <div className="flex items-center md:pl-[3rem]">
-          <img src={logo} alt="Logo" className="w-[100%] h-[5rem]" />
-          
+          <Link to={"/"}>
+            <img src={logo} alt="Logo" className="w-[100%] h-[5rem]" />
+          </Link>
         </div>
+        
         {/* Mobile menu */}
         <div className="md:hidden">
           <button onClick={toggleMenu} className="text-black-500 focus:outline-none">
@@ -57,7 +60,7 @@ const Navbar = () => {
             <img src={cartIcon} alt="Cart" className="w-6 h-6 cursor-pointer" />
           </Link>
           {/*  login link */}
-          <Link to="/login" className="flex items-center bg-[#FF5C00] text-white px-4 py-2 rounded-md">
+          <Link to="/login" className="flex items-center loginbtn px-4 py-2 rounded-md">
             <img src={loginIcon} alt="Login" className="w-4 h-4 mr-2 md:m-[5px] " />
             Login
           </Link>
@@ -76,7 +79,7 @@ const Navbar = () => {
             <Link to="/cart" className="mr-4">
               <img src={cartIcon} alt="Cart" className="w-6 h-6 cursor-pointer" />
             </Link>
-           
+
             <Link to="/login" className="flex items-center bg-[#FF5C00] text-white px-4 py-2 rounded-md">
               <img src={loginIcon} alt="Login" className="w-4 h-4 mr-2" />
               Login

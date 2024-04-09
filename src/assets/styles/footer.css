@@ -1,4 +1,26 @@
- .info ul li {
+/* footer banner */
+
+.banner h1,  .banner p{
+    color: white;
+}
+
+.banner h1{
+  font-size: 1.3rem;
+}
+
+.banner-items{
+    margin: 0 ;
+    margin-left: 3rem !important;
+    
+}
+
+.banner-items :nth-child(2){
+    padding-top: 6px;
+}
+
+
+/* footer  */
+.info ul li {
 
     margin: 2rem 0;
 }
@@ -6,6 +28,8 @@
 .importantLinks ul li {
     margin: 1rem 0;
 }
+
+/* footer bottom */
 .footer-bottom {
     margin-bottom: 0;
 }
@@ -14,7 +38,7 @@
     margin-left: 1rem;
 }
 
-.footer-bottom ul li i{
+.footer-bottom ul li i {
     font-size: 1.5rem;
     cursor: pointer;
     color: #0a2640;
@@ -25,5 +49,16 @@
     font-size: 15px;
 }
 
+@media screen and (max-width: 992px) {
 
- 
+    .banner-items{
+        margin: 2rem  0 !important;
+        padding: 0 !important;
+        
+        width: 100% !important;
+    }
+
+   
+    
+  }
+  

@@ -1,3 +1,46 @@
+/* all strong attribute color  */
 strong{
     color: #FF5C00;
+}
+
+/* navbar */
+
+.navbar{
+    background-color: #ffffff;
+
+}
+.loginbtn {
+    background-color: #FF5C00;
+    color: white;
+}
+/* work process info colors */
+
+.work{
+    background-color: #FFEFE6 !important;
+}
+
+/* footer banner  */
+
+.circale{
+    background-color: #FFEFE6;
+    
+}
+
+.banner{
+    background-color: #67B208;
+}
+
+/* footer  */
+.footer-top{
+    background-color: #FFEFE6  ;
+}
+
+.footer-bottom {
+
+    background-color: #FFBE99;
+}
+
+/* subscribs box  */
+.footer-top .box{
+      background-color: #3E2C34;
 }

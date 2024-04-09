@@ -1,5 +1,6 @@
 import React from "react";
 import "../assets/styles/work.css"
+import "../assets/styles/colors.css"
 import img1 from "../assets/Images/work/1.png"
 import img2 from "../assets/Images/work/2.png"
 import img3 from "../assets/Images/work/3.png"
@@ -11,14 +12,14 @@ const Work = () => {
 
     return (
 
-        <div className="container work  bg-[#FFEFE6] py-10 ">
+        <div className="container work   py-10 ">
             {/* Work Info */}
             <div className="flex justify-center items-center mb-8"> {/* Step 1: Center align both divs */}
                 <div className="work-info">
                     <div className="text-center">
                         <h1 className="allFonts">How does it work?</h1>
                     </div>
-                    <div>
+                    <div className="text-center">
                         <p className="allFonts-p">We have 4 easy steps to deliver your fresh cut vegetables to your doorstep</p>
                     </div>
                 </div>

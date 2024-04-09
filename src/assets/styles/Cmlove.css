@@ -61,7 +61,15 @@
     color: gray;
   }
 
-  
+ 
+  /* Media query for smaller devices */
+@media screen and (max-width: 992px) {
+
+  .user > :nth-child(2){
+    margin-left: 1rem;
+    margin-right: 5rem;
+  }
+}
 
 
 
