@@ -17,6 +17,72 @@
 
 
 
+/* serach icone  */
+.searchBar {
+    position: relative;
+  }
+  
+  /* .searchInput {
+    padding-right: 30px; 
+  } */
+  
+  .searchIcon {
+    width: 15px;
+    position: absolute;
+    top: 50%;
+    right: 8.5rem; /* Adjust the value according to the position you want */
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+
+  /* categories */
+
+.categories h1{
+
+    font-size: 1.5rem;
+    font-weight: 400;
+    
+}
+
+  
+/* categories List */
+  .categoriesList {
+    margin-top: 4rem;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.categoriesList ul {
+    list-style: none;
+    padding: 0;
+}
+
+.categoriesList li {
+      border-bottom: 1px solid #F2F2F2;
+    padding: 10px 0;
+    cursor: pointer;
+  }
+  
+  .categoriesList li:hover {
+    background-color: #FFEFE6;
+    color: #FF5C00;
+  }
+
+  
+
+  
+
+
+  @media screen and (max-width: 1024px ) {
+      .searchIcon{
+        right: 4rem;
+      }
+  }
+
+
+
+
 /* Media query for smaller devices */
 @media screen and (max-width: 992px) {
 

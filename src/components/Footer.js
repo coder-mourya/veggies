@@ -55,7 +55,7 @@ const Footer = () => {
                             </ul>
                         </div>
 
-                        <div className="subscribe w-[90%] md:w-[40%] md:p-[4rem] ">
+                        <div className="subscribe w-[90%] md:w-[40%] md:p-[2rem] ">
 
                             <div className="box text-white p-5 rounded-lg relative md:h-[14rem] ">
                                 <h2 className="text-lg font-bold md:text-2xl mb-2">Subscribe For More info</h2>

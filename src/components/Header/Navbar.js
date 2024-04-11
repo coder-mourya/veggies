@@ -6,6 +6,7 @@ import searchIcon from '../../assets/Images/search.png';
 import cartIcon from '../../assets/Images/cart.png';
 import loginIcon from '../../assets/Images/user.png';
 
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 

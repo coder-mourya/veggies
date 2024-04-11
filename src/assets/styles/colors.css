@@ -7,7 +7,7 @@ strong{
 
 .navbar{
     background-color: #ffffff;
-
+    z-index: 2;
 }
 .loginbtn {
     background-color: #FF5C00;
@@ -44,3 +44,24 @@ strong{
 .footer-top .box{
       background-color: #3E2C34;
 }
+
+
+
+/* Login.css */
+/* You can replace these colors with your desired ones */
+.bg-white {
+    background-color: #fff;
+  }
+  
+  .text-gray-700 {
+    color: #4a5568;
+  }
+  
+  .focus\:outline-none:focus {
+    outline: none;
+  }
+  
+  .focus\:shadow-outline:focus {
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+  }
+  
