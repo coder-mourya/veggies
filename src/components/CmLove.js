@@ -83,9 +83,9 @@ const Love = () => {
               className="owl-theme"
               items={3}
               loop
-              // autoplay={true}
-              // autoplayTimeout={2000}
-              // smartSpeed={3000}
+              autoplay={true}
+              autoplayTimeout={2000}
+              smartSpeed={3000}
               margin={15}
               center={true}
               responsive={breakpoints}
