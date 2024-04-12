@@ -26,7 +26,7 @@ const Home = () => {
 
 
         <>
-            <div className="container ">
+            <div className="container  home">
 
                 <div className="container">
 

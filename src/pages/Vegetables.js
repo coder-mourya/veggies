@@ -4,6 +4,8 @@ import "../assets/styles/items.css";
 import "../assets/styles/Allfonts.css";
 import product from "../assets/Images/product.png";
 import search from "../assets/Images/search.png";
+import cart from "../assets/Images/redCart.png";
+import "../assets/styles/colors.css";
 
 
 const Vegetables = () => {
@@ -13,17 +15,17 @@ const Vegetables = () => {
   const [selectedCategory, setSelectedCategory] = useState('');
 
   useEffect(() => {
+
+    const fetchItems = async () => {
+      try {
+        setItems(dummyItems);
+      } catch (error) {
+        console.error('Error fetching items:', error);
+      }
+    };
+
     fetchItems();
   }, []);
-
-  const fetchItems = async () => {
-    try {
-      setItems(dummyItems);
-    } catch (error) {
-      console.error('Error fetching items:', error);
-    }
-  };
-
 
 
   const handleOptionChange = (itemId, event) => {
@@ -125,6 +127,15 @@ const Vegetables = () => {
                     <option value="Option 1">Option 1</option>
                     <option value="Option 2">Option 2</option>
                   </select>
+                  <div className="flex justify-center">
+                    <button className="w-[15rem] flex justify-center items-center py-2 mb-2 cart-button rounded">
+                      <img src={cart} alt="cart" className="mr-2" />
+                      <span>Add to cart</span>
+                    </button>
+                  </div>
+
+
+
                 </div>
               </div>
             ))}

@@ -65,7 +65,7 @@ const Footer = () => {
                                         style={{ borderRadius: '8px' }}
                                         type="text"
                                         placeholder="Enter your email id"
-                                        className="w-full md:py-4 py-3 px-3 border border-gray-300 rounded-md"
+                                        className="w-full md:py-7 py-6 px-3 border border-gray-300 rounded-md"
                                     />
                                     <button className=" text-white md:py-2 py-1 px-4 mr-2 rounded-md absolute right-0 mt-2 bg-[#FF5C00]">Subscribe</button>
                                 </div>
