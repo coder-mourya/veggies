@@ -13,10 +13,8 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 import left from "../assets/Images/cmLove/left-arow.png";
 import right from "../assets/Images/cmLove/right-arow.png";
 import userIcon from "../assets/Images/cmLove/usericon.png";
-import  {Review} from "../assets/Dummydata/dummyData";
-// import user1 from "../assets/Images/cmLove/user1.png";
-// import user2 from "../assets/Images/cmLove/user2.png";
-// import user3 from "../assets/Images/cmLove/user3.png";
+import { Review } from "../assets/Dummydata/dummyData";
+
 
 
 
@@ -35,23 +33,22 @@ const Love = () => {
     setData(Review);
   };
 
-  
+
   const handleNextButtonClick = () => {
     if (owlCarouselRef && owlCarouselRef.current) {
       owlCarouselRef.current.next();
     }
   };
-  
+
   const handlePrevButtonClick = () => {
     if (owlCarouselRef && owlCarouselRef.current) {
       owlCarouselRef.current.prev();
     }
   };
 
-// user images 
-  // const userImages = [user1, user2, user3];
 
-  
+
+
   const breakpoints = {
     0: { items: 1 },
     600: { items: 2 },
@@ -86,9 +83,9 @@ const Love = () => {
               className="owl-theme"
               items={3}
               loop
-              autoplay={true}
-              autoplayTimeout={2000}
-              smartSpeed={3000}
+              // autoplay={true}
+              // autoplayTimeout={2000}
+              // smartSpeed={3000}
               margin={15}
               center={true}
               responsive={breakpoints}
@@ -97,15 +94,15 @@ const Love = () => {
             >
               {data.map((item) => (
                 <div key={item.id} className="cards">
-                  <div className="user flex">
+                  <div className="user flex ">
                     <div className="col-3">
 
-                    <img src={item.image} 
-                    alt={item.nam}
-                     className="card-pick" />
+                      <img src={item.image}
+                        alt={item.nam}
+                        className="card-pick" />
 
                     </div>
-                    <div className="col-6 text-left">
+                    <div className="col-6 text-left 2xl:mr-[7rem]">
                       <h5>{item.name}</h5>
                       <p>{item.role}</p>
                     </div>

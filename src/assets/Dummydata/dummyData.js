@@ -24,7 +24,7 @@ import user3 from "../Images/cmLove/user3.png";
 
 
 
-export const dummyItems = [
+export let dummyItems = [
   {
     "id": 1,
     "itemName": "Drumstickmoringa",
