@@ -15,17 +15,29 @@ const Vegetables = () => {
   const [selectedCategory, setSelectedCategory] = useState('');
 
   useEffect(() => {
-
     const fetchItems = async () => {
-      try {
-        setItems(dummyItems);
-      } catch (error) {
-        console.error('Error fetching items:', error);
-      }
+        try {
+            // Modify item names
+            const modifiedItems = dummyItems.map(item => ({
+                ...item,
+                itemName: item.itemName
+
+                    .split('-') // Split the name by hyphens
+                    .map(word => word.charAt(0).toUpperCase() + word.slice(1)) // Capitalize each word
+                    .join(' ') // Join the words back together with spaces
+                    .slice(0, 10) + (item.itemName.length > 10 ? '...' : '')
+
+
+            }));
+
+            setItems(modifiedItems);
+        } catch (error) {
+            console.error('Error fetching items:', error);
+        }
     };
 
     fetchItems();
-  }, []);
+}, []);
 
 
   const handleOptionChange = (itemId, event) => {
@@ -118,15 +130,19 @@ const Vegetables = () => {
                 <h1 className="text-xl font-semibold text-center">{item.itemName}</h1>
                 <p className="text-gray-600 mt-2 text-center">Price: ${item.itemPrice}</p>
                 <div className="text-center">
-                  <select
-                    value={selectedOptions[item.id] || ''}
-                    onChange={(e) => handleOptionChange(item.id, e)}
-                    className="my-3 md:py-2 py-3 md:px-[5rem] px-[5rem] border border-gray-300 rounded"
-                  >
-                    <option value="">Roll cut</option>
-                    <option value="Option 1">Option 1</option>
-                    <option value="Option 2">Option 2</option>
-                  </select>
+                  <div className='flex justify-center'>
+
+                    <select
+                      value={selectedOptions[item.id] || ''}
+                      onChange={(e) => handleOptionChange(item.id, e)}
+                      className="my-3 md:py-2 py-3 md:px-[5rem] px-[5rem] border border-gray-300 rounded"
+                    >
+                      <option value="">Roll cut</option>
+                      <option value="Option 1">Option 1</option>
+                      <option value="Option 2">Option 2</option>
+                    </select>
+                  </div>
+
                   <div className="flex justify-center">
                     <button className="w-[15rem] flex justify-center items-center py-2 mb-2 cart-button rounded">
                       <img src={cart} alt="cart" className="mr-2" />
